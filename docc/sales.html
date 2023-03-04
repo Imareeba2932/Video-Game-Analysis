@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+      <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js"></script>
+      <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js"></script>
+      <link href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css" type="text/css" rel="stylesheet">
+      <link href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css" type="text/css" >
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="sales-header">
+        <h1>GLOBAL SALES</h1>
+        <p>Sales between years</p><br>
+        <p>In the modern days, video games are known across the world. Let's see how popular of video games to each different world region.</p>
+    </div>
+    <div class="sales-section">
+        <div class="content">
+            <div>
+                <div class="image">
+                    <img src="SalesImage/001.jpeg">
+                </div>
+                <div class="bar" style="--clr1: #800080; --clr2: #c71585;">
+                    <span class="progress" id="55"></span>
+                    <h2>lorem, ipsum</h2>
+                    <h1>197.1</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="SalesImage/002.jpeg">
+                </div>
+                <div class="bar" style="--clr1: #800080; --clr2: #c71585;">
+                    <span class="progress" id="55"></span>
+                    <h2>lorem, ipsum</h2>
+                    <h1>228.8</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="SalesImage/003.jpeg">
+                </div>
+                <div class="bar" style="--clr1: #800080; --clr2: #c71585;">
+                    <span class="progress" id="55"></span>
+                    <h2>Total global sales between 1980 and 1985: 197.1</h2>
+                    <h1>321.6</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="SalesImage/004.jpeg">
+                </div>
+                <div class="bar" style="--clr1: #800080; --clr2: #c71585;">
+                    <span class="progress" id="55"></span>
+                    <h2>lorem, ipsum</h2>
+                    <h1>1109.4</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="SalesImage/005.jpeg">
+                </div>
+                <div class="bar" style="--clr1: #800080; --clr2: #c71585;">
+                    <span class="progress" id="55"></span>
+                    <h2>lorem, ipsum</h2>
+                    <h1>1964.0</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="SalesImage/007.jpeg">
+                </div>
+                <div class="bar" style="--clr1: #800080; --clr2: #c71585;">
+                    <span class="progress" id="55"></span>
+                    <h2>lorem, ipsum</h2>
+                    <h1>3078.8</h1>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="SalesImage/008.jpeg">
+                </div>
+                <div class="bar" style="--clr1: #800080; --clr2: #c71585;">
+                    <span class="progress" id="55"></span>
+                    <h2>lorem, ipsum</h2>
+                    <h1>71.27</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="main.js"></script> -->
+    <script>
+        const bars = document.querySelectorAll('.progress');
+        bars.forEach(item =>{
+            let value = item.id;
+            let contador = 0;
+            let interval = setInterval(function(){
+                item.style.width = contador + "%";
+                if (contador == value){
+                    clearInterval(interval);
+                }
+                contador++;
+
+            },8);
+        })
+    </script>
+</body>
+<body>
+    <section>
+        <div class="sales-container">
+            <p> According to the chart, you'll obviously notice that there're so many curves, up and down. This somehow related to the releases chart, but still, let's take a deeper look on some events.</p> <br>
+            <div class="sales-list">
+                <ul>
+                    <li>
+                        In 1984 there's the game named <b>Duck Hunt</b> which has 28.31 million sales<i>(count as 56.22% of that year  
+                             sales)</i>
+                    </li>
+                    <li>
+                        In 1985 there's the game named <b>Super Mario Bros</b>. which has 40.24 million sales<i>(count as 74.6% of that year sales)</i>
+                    </li>
+                    <li>
+                        In 1989 there's the game named <b>Tetris</b> which has 30.26 million sales and the game named <b>Super Mario</b> Land which has 18.14 million sales<i>(both games count as 65.89% of that year sales)</i>
+                    </li>
+                    <li>
+                        In 1995, the first event of <b>Electronic Entertainment Expo</b> was held in Los Angeles Convention Center. In this event, there will be many game publishers gathering up and set up their own exhibition in the event, which could make people more interested in new video games and boost their sales up.
+                    </li>
+                    <li>
+                        On October 2000, Sony released <b>PlayStation 2</b>. This boosts video game sales up in 2001-2002.
+                    </li>
+                    <li>
+                        On November 2004, <b>Nintendo DS</b> was released. On November 2005, <b>Wii</b> and <b>XBox360</b> were released. On November 2006, <b>PlayStation 3</b> was released. The releases of these 4 brand new and popular gaming platforms significantly boost the video game sales up from 2004 to 2008.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

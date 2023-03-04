@@ -13,7 +13,7 @@
     --secondary-text-color: #57759;
     --accent-color:#2294ed;
     --accent-color-dark:#1d69a3;
-    --padding-inine-section:20px
+    --padding-inline-section:20px
 }
 
 body{
@@ -63,7 +63,7 @@ a{
 .container{
     max-width: 1180px;
     margin-inline: auto;
-    padding-inline: var(--padding-inine-section);
+    padding-inline: var(--padding-inline-section);
 }
 .flex{
     display: flex;
@@ -112,24 +112,25 @@ a{
 }
 
 .nav-links{
-    flex-basis: 730px;
+    flex-basis: 750px;
 }
 
 .nav-links ul{
     justify-content: end;
-    gap: 40px;
+    gap: 30px;
     list-style: none;
 }
 
 /* header section  */
 
 header{
-    padding: 10px var(--padding-inine-section) 0;
+    padding: 10px var(--padding-inline-section) 0;
 }
 
 .header-section{
     justify-content: center;
     gap: 40px;
+    padding-bottom: 10%;
 }
 .header-left{
     max-width: 40vw;
@@ -149,53 +150,61 @@ header{
 
 /* tool section  */
 
-.tool-header{
+.cont-header{
     text-align: center;
     padding-block: 30px;
     color: var(--primary-text-color);
 }
-.tool-header h1{
+.cont-header h1{
     font-family: 'Gloock', serif;
 }
-.logos{
-    justify-content: space-between;
-    flex-wrap: wrap;
+.logos h3{
+    font-family: 'Gloock', serif;
+    margin-top: 380px;
+    padding-right: 500px;
 }
+
 .logo{
-    height: 46px;
+    padding-top: 80px;
+    height: 350px;
 }
 
 
 /* overview section  */
-.overview-section{
+
+.summary-section{
     padding-block: 60px;
 
 }
-.overview-header p{
+.summary-header p{
     color: gray;
     text-align: center;
     font-family: 'Kalam', cursive;
     padding-bottom: 50px;
 }
-.overview-header h1{
+.summary-header h1{
     text-align: center;
 }
 
-.modal-body p {
+.modal-body-p {
     padding-top: 20px;
     color: var(--secondary-text-color);
     line-height: 1.80rem;
     display: block;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    padding-left: 70%;
 }
 .modal-body li{
     font-family: 'Fira Sans', sans-serif;
     font-size: 1.15rem;
-    /* line-height: 1rem; */
 }
-.overview-section ul ul {
+.summary-section ul ul {
     list-style-type: circle;
+    padding-left: 3%;
+}
+.modal-body{
+    padding: 2px;
 }
 
 
@@ -204,6 +213,7 @@ header{
 
 .feature-header{
     text-align: center;
+    padding-top: 5%;
 }
 .feature-heading-text{
     margin-bottom: 20px;    
@@ -223,12 +233,142 @@ header{
 .features-card img{
     height: 100px;
 }
+.feature-header p{
+    color: gray;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    padding-bottom: 50px;
+}
 
 
-/* p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-} */
+
+/*  Gobal - Sales Section */
+
+.sales-header{
+    text-align: center;
+    padding-top: 20%;
+}
+.sales-header p{
+    color: gray;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+.sales-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    height: 540px;
+    width: 600px;
+}
+.content div{
+    display: flex;
+    align-items: center;
+}
+.content .image{
+    height: 100px;
+    padding-left: 40px;
+}
+
+.content .bar{
+    height: 80px;
+    width: 450px;
+    background: white;
+    border-radius: 40px;
+    position: relative;
+    margin-left: 20px;
+    overflow: hidden;
+    box-shadow: 2px 5px 10px #999;
+}
+.content  .progress{
+    height: 80px;
+    border-radius: 40px;
+    background: linear-gradient(to right, var(--clr1), var(--clr2));
+}
+.content div .bar h1{
+    position: absolute;
+    right: 10px;
+    color: var(--clr1);
+    font-weight: 500;
+    font-size: 35px;
+}
+.content div .bar h2{
+    position: absolute;
+    left: 30px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px;
+}
+.sales-container{
+    margin-left: 10%;
+    padding-right: 12%;
+    font-size: smaller;
+    padding-top: 15%;
+    padding-bottom: 10%;
+}
+.sales-container li{
+    font-size: 1.20rem;
+}
+
+
+/* -----------------Publisher------------ */
+
+body{
+    color: #212121;
+    -webkit-font-smoothing:antialiased;
+    padding: 2%;
+}
+.wrap h1{
+    font-family: 'Gloock', serif;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.wrap p{
+    color: gray;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    padding-top: 1%;
+    padding-bottom: 4%;
+}
+.wrap .bar{
+    margin-left: 10%;
+}
+.bar{
+    background: lightskyblue;
+    width: 0;
+    margin: .25em 0;
+    color: #fff;
+    position: relative;
+}
+.bar .label{
+    font-size: .751m;
+    padding: 1em;
+    background: #212121;
+    width: 7em;
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+}
+.bar .label .second{
+    background: #333;
+}
+.count{
+    position: absolute;
+    right: .25em;
+    top: .75em;
+    padding: .15em;
+    font-size: .75em;
+    font-weight: bold;
+}
+.publisher-container p{
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+
