@@ -148,7 +148,7 @@ header{
     height: 500px;
 }
 
-/* tool section  */
+/*--------------- tool section -----------------*/
 
 .cont-header{
     text-align: center;
@@ -169,51 +169,11 @@ header{
     height: 350px;
 }
 
-
-/*-------------------overview-------------------*/
-
-.summary-section{
-    padding-block: 60px;
-
-}
-.summary-header p{
-    color: gray;
-    text-align: center;
-    font-family: 'Kalam', cursive;
-    padding-bottom: 50px;
-}
-.summary-header h1{
-    text-align: center;
-}
-
-.modal-body-p {
-    padding-top: 20px;
-    color: var(--secondary-text-color);
-    line-height: 1.80rem;
-    display: block;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-left: 70%;
-}
-.modal-body li{
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 1.15rem;
-}
-.summary-section ul ul {
-    list-style-type: circle;
-    padding-left: 3%;
-}
-.modal-body{
-    padding: 2px;
-}
-
-
 /*-----------------feature section--------------------*/
-
 
 .feature-header{
     text-align: center;
-    padding-top: 5%;
+    padding-top: 10%;
 }
 .feature-heading-text{
     margin-bottom: 20px;    
@@ -240,13 +200,11 @@ header{
     padding-bottom: 50px;
 }
 
-
-
 /*----------------Gobal-Sales----------------- */
 
 .sales-header{
     text-align: center;
-    padding-top: 20%;
+    padding-top: 10%;
 }
 .sales-header p{
     color: gray;
@@ -313,21 +271,13 @@ header{
     font-size: 1.20rem;
 }
 
-
-
 /* -----------------Publisher------------ */
 
-body{
-    color: #212121;
-    -webkit-font-smoothing:antialiased;
-    padding: 2%;
-}
 .wrap h1{
     font-family: 'Gloock', serif;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 15px;
 }
-
 .wrap p{
     color: gray;
     text-align: center;
@@ -354,9 +304,9 @@ body{
     position: relative;
     font-weight: bold;
 }
-.bar .label .second{
+/* .bar .label .second{
     background: #333;
-}
+} */
 .count{
     position: absolute;
     right: .25em;
@@ -395,108 +345,123 @@ body{
 .platform-section .platform-bar{
     margin: 20px 0;    
 }
-    .platform-section .platform-bar:first-child{
-        margin-top: 0px;    
+.platform-section .platform-bar:first-child{
+    margin-top: 0px;    
+}
+.platform-section .platform-bar .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05),
+                0px 1px 1px rgba(255,255,255,0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.platform-bar .progress-line span{
+    height: 100%;
+    width: 80%;
+    background: blueviolet;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: left; 
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards           
+}
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
     }
+}
+.progress-line.Wii span{
+    width: 50%;
+}
+.progress-line.DS span{
+    width: 98%;
+}
+.progress-line.X360 span{
+    width: 59%;
+}
+.progress-line.PS3 span{
+    width: 54%;
+}
+.progress-line.PS2 span{
+    width: 97%;
+}
+.progress-line.PSP span{
+    width: 44%;
+}
     
-    .platform-section .platform-bar .progress-line{
-        position: relative;
-        height: 10px;
-        width: 100%;
-        background: #f0f0f0;
-        border-radius: 10px;
-        transform: scaleX(0);
-        transform-origin: left;
-        box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05),
-                  0px 1px 1px rgba(255,255,255,0.8);
-        animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+.platform-bar .progress-line span::before{
+    position: absolute;
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+.platform-bar .progress-line span::after{
+    position: absolute;
+    right: 0;
+    top: -22px;
+    color: #fff;
+    background: #000;
+    font-size: 15px;
+    padding: 1px 8px;
+    opacity: 0;
+    animation: showText2 0.5s 2.5s linear forwards;            
+}
+@keyframes showText2{
+    100%{
+        opacity: 1;
     }
-    .platform-bar .progress-line span{
-        height: 100%;
-        width: 80%;
-        /* padding-left: 20%; */
-        background: blueviolet;
-        position: absolute;
-        transform: scaleX(0);
-        transform-origin: left; 
-        animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards           
-    }
-    @keyframes animate {
-        100%{
-            transform: scaleX(1);
-        }
-    }
-    .progress-line.Wii span{
-        width: 50%;
-    }
-    .progress-line.DS span{
-        width: 98%;
-    }
-    .progress-line.X360 span{
-        width: 59%;
-    }
-    .progress-line.PS3 span{
-        width: 54%;
-    }
-    .progress-line.PS2 span{
-        width: 97%;
-    }
-    .progress-line.PSP span{
-        width: 44%;
-    }
+}
+.progress-line.Wii span::after{
+    content: "1325";
+}
+.progress-line.DS span::after{
+    content: "2163";
+}
+.progress-line.X360 span::after{
+    content: "1265";
+}
+.progress-line.PS3 span::after{
+    content: "1329";
+}
+.progress-line.PS2 span::after{
+    content: "2161";
+}
+.progress-line.PSP span::after{
+    content: "1213";
+}
+.platform-p{
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
     
-    .platform-bar .progress-line span::before{
-        position: absolute;
-        /* content: ""; */
-        right: 0;
-        top: -10px;
-        height: 0;
-        width: 0;
-        border: 7px solid transparent;
-        border-right-width: 0px;
-        border-top-color: #000;
-        opacity: 0;
-        animation: showText2 0.5s 1.5s linear forwards;
-    }
-    
-    .platform-bar .progress-line span::after{
-        position: absolute;
-        right: 0;
-        top: -22px;
-        color: #fff;
-        background: #000;
-        font-size: 15px;
-        padding: 1px 8px;
-        opacity: 0;
-        animation: showText2 0.5s 2.5s linear forwards;            
-    }
-    @keyframes showText2 {
-        100%{
-            opacity: 1;
-        }
-        
-    }
-    .progress-line.Wii span::after{
-        content: "1325";
-    }
-    .progress-line.DS span::after{
-        content: "2163";
-    }
-    .progress-line.X360 span::after{
-        content: "1265";
-    }
-    .progress-line.PS3 span::after{
-        content: "1329";
-    }
-    .progress-line.PS2 span::after{
-        content: "2161";
-    }
-    .progress-line.PSP span::after{
-        content: "1213";
-    }
-    .platform-p{
-        padding-top: 2%;
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-    
+/* -----------------summary-------------------- */
+
+.summary-header h1{
+    padding-top: 10%;
+    text-align: center;
+}
+.summary-header p{
+    color: gray;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    padding-bottom: 50px;
+}
+.summary-header ul{
+    font-size: 1.15rem;
+}
+
+.summary-header ul ul {
+    list-style-type: circle;
+
+}
