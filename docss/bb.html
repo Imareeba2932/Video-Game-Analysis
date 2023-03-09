@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        getData();
+    
+        async function getData(){
+            const response = await fetch("vgsales.csv");
+            const data = await response.text();
+            console.log(data);
+    
+            const table = data.split('\n').slice(1);
+            table.forEach(row => {
+                const columns = row.split(',');
+                const Rank = columns[0];
+                const Name = columns[1];
+                console.log(row);
+            });
+    
+        }
+    
+    </script>
+</body>
+</html>
