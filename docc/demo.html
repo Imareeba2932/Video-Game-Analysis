@@ -8,12 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
-      <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js"></script>
-      <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js"></script>
-      <link href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css" type="text/css" rel="stylesheet">
-      <link href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2family=Kalam:wght@300&family=Montserrat&family=Open+Sans:wght@300;400;600&family=Poppins:wght@100;200;300;400;600;700&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
-
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js"></script>
+    <script src = 'http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <link href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css" type="text/css" rel="stylesheet">
+    <link href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css" type="text/css" rel="stylesheet">
 
     <title>Video Game Sales Analysis</title>
     <style type="text/css">
@@ -31,14 +30,15 @@
         }
         .overview-header {
             text-align:center;
-            padding-top: 60px;
+            padding-top:50px;
         }
         
     </style>
 </head>
+<!-- <body> -->
 <body>
 
-    <!-- toper banner  -->
+<!-- toper banner  -->
 
     <div class="top-banner">
         <div class="container">
@@ -46,7 +46,7 @@
         </div>
     </div>
 
-    <!-- nav bar -->
+<!-- nav bar -->
     <nav>
         <div class="container main-nav flex">
             <a href="#" class="company-logo">
@@ -55,7 +55,6 @@
             <div class="nav-links">
                 <ul class="flex">
                     <li><a href="#" class="hover-link">OVERVIEW</a></li>
-                    <!-- <li><a href="#" class="hover-link">RELEASES</a></li> -->
                     <li><a href="#" class="hover-link">GROWTH_SALES</a></li>
                     <li><a href="#" class="hover-link">PUBLISHERS</a></li>
                     <li><a href="#" class="hover-link">PLATFORM</a></li>
@@ -67,7 +66,7 @@
         </div>
     </nav>
 
-    <!-- header  -->
+<!-- header  -->
     <header>
         <div class="container header-section flex">
             <div class="header-left">
@@ -83,16 +82,15 @@
     </header>
     
 
-    <!-- overview section -->
+<!-- overview section -->
 
-    <body>
-      
-      <div id="container">
+<body>
+    <div id="container">
         <h1 class="overview-header">OVERVIEW</h1>
-      </div>
+    </div>
       
     
-      <script>
+    <script>
     
         anychart.onDocumentReady(function () {
           
@@ -129,13 +127,12 @@
           chart.draw();
         });
 
-</script>
+    </script>
 </body>
                    
 
 <!-- gobal sales -->
 
-<!-- <body> -->
     <div class="sales-header">
         <h1>GLOBAL SALES</h1>
         <p>Sales between years. In the modern days, video games are known across the world. <br> Let's see how popular of 
@@ -210,9 +207,8 @@
             },8);
         })
     </script>
-<!-- </body> -->
-<!-- <body> -->
-    <section>
+
+    <!-- <section> -->
         <div class="sales-container">
             <p> According to the chart, you'll obviously notice that there're so many curves, up and down. This somehow related to the releases chart, but still, let's take a deeper look on some events.</p> <br>
             <div class="sales-list">
@@ -238,26 +234,26 @@
                 </ul>
             </div>
     </div>
-    </section>
+<!-- </section> -->
 <!-- </body> -->
 
 <!-- Publisher -->
 
-    <div class="wrap">
-        <h1>PUBLISHER</h1>
-        <p>Most people obviously have their own choice of video game publisher. Let's see Top 10 Video Game publishers.</p>
+<div class="wrap">
+    <h1>PUBLISHER</h1>
+    <p>Most people obviously have their own choice of video game publisher. Let's see Top 10 Video Game publishers.</p>
         <div class="bar" data-percent = "1108"><span class="label">Electronic Arts</span></div>
-        <div class="bar" data-percent = "975"><span class="label second">Activision</span></div>
+        <div class="bar" data-percent = "975"><span class="label">Activision</span></div>
         <div class="bar" data-percent = "932"><span class="label">Namco Bandai Games</span></div>
-        <div class="bar" data-percent = "921"><span class="label second">Ubisoft</span></div>
+        <div class="bar" data-percent = "921"><span class="label">Ubisoft</span></div>
         <div class="bar" data-percent = "832"><span class="label">Konami Digital Entertainment</span></div>
-        <div class="bar" data-percent = "715"><span class="label second">THQ</span></div>
+        <div class="bar" data-percent = "715"><span class="label">THQ</span></div>
         <div class="bar" data-percent = "703"><span class="label">Nintendo</span></div>
-        <div class="bar" data-percent = "683"><span class="label second">Sony Computer Entertainment</span></div>
+        <div class="bar" data-percent = "683"><span class="label">Sony Computer Entertainment</span></div>
         <div class="bar" data-percent = "639"><span class="label">Sega</span></div>
         <div class="bar" data-percent = "413"><span class="label">Take-Two Interactive</span></div>
-    </div>
-<script src = 'http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+</div>
+
 <script>
     setTimeout(function start(){
         $('.bar').each(function(i){
@@ -282,7 +278,8 @@
 </script>
         <div class="publisher-container">
             <p> <br>After doing the analysis, we've found a total of <b>627 video game publishers</b> with a total sales of roughly <b>8905.56 million sales</b>. We have picked top 16 game publishers to create this bar chart. Total sales of these 16 publishers have already dominate the market roughly <b>81.97%</b> of all video game sales. This means the other 611 video game publishers only has <b>18.03%</b> of all sales</p>
-            <p>Let's take a deeper look at the top 3, including <a href="Nintendo" style="color: rgb(230, 15, 230);">Nintendo</a>, <a href="Electronic Arts" style="color: rgb(230, 15, 230);">Electronic Arts</a> and <a href="Activision" style="color: rgb(230, 15, 230);">Activision</a>. You'll see that <b>Nintendo</b> has the most video game sales. This is because <b>Nintendo</b> has super-popular games like Super Mario or Pokémon, which I'm so sure everyone knows both of these. Most of their game are also cartoonish-styled.</p> <br>
+
+            <p>Let's take a deeper look at the top 3, including <a href="Nintendo" style="color: rgb(230, 15, 230);">Nintendo</a>, <a href="Electronic Arts" style="color: rgb(230, 15, 230);">Electronic Arts</a> and <a href="Activision" style="color: rgb(230, 15, 230);">Activision</a>. You'll see that <b>Nintendo</b> has the most video game sales. This is because <b>Nintendo</b> has super-popular games like Super Mario or Pokémon, which I'm so sure everyone knows both of these. Most of their game are also cartoonish-styled.</p>
             <p>Next, <b>Electronic Arts</b> . Their main sales are games from series of FIFA, which are published under the label EA Sports, along with other 5 video game series under this label. <b>Electronic Arts</b> also have many more popular video game series like Battlefield, Need for Speed or The Sims. Last but not least, <b>Activision</b>. Their main sales are Call of Duty games, which are shooting games. Actually, they releases a new Call of Duty game annually since 2005. This includes Overwatch, brand-new shooter game, also one of the biggest hits in 2016.</p>
         </div>
 
@@ -351,7 +348,7 @@
         <h5>What do we know more?</h5>
 
             <ul class="summary-list">
-                <li>From the <b style="color: rgb(230, 15, 230);">Growth-Sales</b> section, we get to know the importance of technology, which made gaming industry grown this far. And We get to know that video game sales of each year are most affected from releases amount. Also, if we can make games that match the people's favor just right, that game might get unbelievable sale.
+                <li> From the <b style="color: rgb(230, 15, 230);">Growth-Sales</b> section, we get to know the importance of technology, which made gaming industry grown this far. And We get to know that video game sales of each year are most affected from releases amount. Also, if we can make games that match the people's favor just right, that game might get unbelievable sale.
                 </li>
                 <li>From the <b style="color: rgb(230, 15, 230);">Publishers</b> section, we get to know the reason why top 16 video game publishers are able to dominate the market roughly <b>81.75%</b> , while the other 562 publishers only own a total of <b>18.25%</b> of all sales. The reason is their very own strength or highlight of their games.</li>
 
@@ -383,67 +380,60 @@
     </div>
 </div>
 
-
-    <!-- feature section  -->
+<!-- tool section  -->
 
 <!-- <section class="feature-section"> -->
-    <div class="container">
-        <div class="feature-header">
-            <h3 class="feature-heading-text">Tools we used to get this project done</h3>
-            <a href="#" class="primary-button">See all feature</a>
+    <!-- <section class="feature-section"> -->
+        <div class="container">
+            <div class="tool-header">
+                <h1>TOOL</h1>
+                <p>Tools we used to get this project done</p>+
+            </div>
+            <div class="tool-area flex">
+                <div class="tool-card flex">
+                    <img src="images/python.png" alt="">
+                    <h3>python</h3>
+                    <p>The programming language used in this project.</p>
+                    <a href="#" class="primary-button">Learn More</a>
+                </div>
+                <div class="tool-card flex">
+                    <img src="images/numpy-logo.png" alt="">
+                    <h3>Numpy</h3>
+                    <p>One of the Python external libraries for managing array data</p>
+                    <a href="#" class="primary-button">Learn More</a>
+                </div>
+                <div class="tool-card flex">
+                    <img src="images/pandas-logo.png" alt="">
+                    <h3>Pandas</h3>
+                    <p>One of the Python external libraries for doing data analysis.</p>
+                    <a href="#" class="primary-button">Learn More</a>
+                </div>
+                <div class="tool-card flex">
+                    <img src="images/git-logo.png" alt="">
+                    <h3>Github</h3>
+                    <p>Github for doing project as a team.</p>
+                    <a href="#" class="primary-button">Learn More</a>
+                </div>
+                <div class="tool-card flex">
+                    <img src="images/github-logo.png" alt="">
+                    <h3>Github Pages</h3>
+                    <p>Github page for creating project site.</p>
+                    <a href="#" class="primary-button">Learn More</a>
+                </div>
+                <div class="tool-card flex">
+                    <img src="images/download.jfif" alt="">
+                    <h3>JavaScript</h3>
+                    <p>For Update and change both HTML and CSS</p>
+                    <a href="#" class="primary-button">Learn More</a>
+                </div>
+            </div>
         </div>
-        <div class="features-area flex">
-            <div class="features-card flex">
-                <img src="images/python.png" alt="">
-                <h3>python</h3>
-                <p>The programming language used in this project.</p>
-                <a href="#" class="primary-button">Learn More</a>
-            </div>
-            <div class="features-card flex">
-                <img src="images/numpy-logo.png" alt="">
-                <h3>Numpy</h3>
-                <p>One of the Python external libraries for managing array data</p>
-                <a href="#" class="primary-button">Learn More</a>
-            </div>
-            <div class="features-card flex">
-                <img src="images/pandas-logo.png" alt="">
-                <h3>Pandas</h3>
-                <p>One of the Python external libraries for doing data analysis.</p>
-                <a href="#" class="primary-button">Learn More</a>
-            </div>
-            <div class="features-card flex">
-                <img src="images/git-logo.png" alt="">
-                <h3>Github</h3>
-                <p>For doing project as a team.  oject site</p>
-                <a href="#" class="primary-button">Learn More</a>
-            </div>
-            <div class="features-card flex">
-                <img src="images/github-logo.png" alt="">
-                <h3>Github Pages</h3>
-                <p>For creating project site. This site. Ahhhkahmajjjj</p>
-                <a href="#" class="primary-button">Learn More</a>
-            </div>
-            <div class="features-card flex">
-                <img src="images/python.png" alt="">
-                <h3>python</h3>
-                <p>The programming language used in this project.</p>
-                <a href="#" class="primary-button">Learn More</a>
-            </div>
-        </div>
-    </div>
+        <!-- </div> -->
 <!-- </section> -->
 
 
 
-    <section class="examples-section"></section>
 
-    <section class="cta-section"></section>
-
-    <footer></footer>
-
-    <div class="subfooter"></div>
-
-    <div class="spacer" style="height: 100vh;"></div>
 
 
 </body>

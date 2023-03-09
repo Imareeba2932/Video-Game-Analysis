@@ -148,7 +148,7 @@ header{
     height: 500px;
 }
 
-/*--------------- tool section -----------------*/
+/*--------------- team section -----------------*/
 
 .cont-header{
     text-align: center;
@@ -169,42 +169,13 @@ header{
     height: 350px;
 }
 
-/*-----------------feature section--------------------*/
 
-.feature-header{
-    text-align: center;
-    padding-top: 10%;
-}
-.feature-heading-text{
-    margin-bottom: 20px;    
-}
-.features-area{
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 40px;
-    margin-top: 20px;
-}
-.features-card{
-    flex-direction: column;
-    gap: 20px;
-    max-width: 30%;
-    text-align: center;
-}
-.features-card img{
-    height: 100px;
-}
-.feature-header p{
-    color: gray;
-    text-align: center;
-    font-family: 'Kalam', cursive;
-    padding-bottom: 50px;
-}
 
 /*----------------Gobal-Sales----------------- */
 
 .sales-header{
     text-align: center;
-    padding-top: 10%;
+    padding-top: 20%;
 }
 .sales-header p{
     color: gray;
@@ -304,9 +275,6 @@ header{
     position: relative;
     font-weight: bold;
 }
-/* .bar .label .second{
-    background: #333;
-} */
 .count{
     position: absolute;
     right: .25em;
@@ -464,4 +432,36 @@ header{
 .summary-header ul ul {
     list-style-type: circle;
 
+}
+
+/*----------------tool section--------------------*/
+
+.tool-header{
+    text-align: center;
+    padding-top: 10%;
+}
+.tool-heading-text{
+    margin-bottom: 20px;    
+}
+.tool-area{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 20px;
+}
+.tool-card{
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    text-align: center;
+}
+.tool-card img{
+    height: 100px;
+}
+.tool-header p{
+    color: gray;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    padding-top: 20px;
+    padding-bottom: 50px;
 }

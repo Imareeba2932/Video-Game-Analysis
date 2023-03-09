@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+      <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js"></script>
+      <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js"></script>
+      <link href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css" type="text/css" rel="stylesheet">
+      <link href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css" type="text/css" >
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    <style>
+        .sub-header{
+          min-height: 80vh;
+          width: 100%;
+          background-image: url(images/background3.jpg);
+          background-position: center;
+          background-size: cover;
+          position: absolute;
+        }
+        .text-area p{
+          font-size: 17px;
+          color: #fff;
+          text-align: center;
+          font-family: 'Kalam', cursive;
+        }
+        .sales-section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 40%;
+        }
+        .content{
+            height: 540px;
+            width: 600px;
+        }
+        .content div{
+            display: flex;
+            align-items: center;
+        }
+        .content .image{
+            height: 100px;
+            padding-left: 40px;
+        }
+        
+        .content .bar{
+            height: 80px;
+            width: 450px;
+            background: white;
+            border-radius: 40px;
+            position: relative;
+            margin-left: 20px;
+            overflow: hidden;
+            box-shadow: 2px 5px 10px #999;
+        }
+        .content  .progress{
+            height: 80px;
+            border-radius: 40px;
+            background: linear-gradient(to right, var(--clr1), var(--clr2));
+        }
+        .content div .bar h1{
+            position: absolute;
+            right: 10px;
+            color: var(--clr1);
+            font-weight: 500;
+            font-size: 35px;
+        }
+        .content div .bar h2{
+            position: absolute;
+            left: 30px;
+            color: #fff;
+            font-weight: 600;
+            font-size: 25px;
+        }
+        .sales-container{
+            margin-left: 10%;
+            padding-right: 12%;
+            font-size: smaller;
+            padding-top: 15%;
+            padding-bottom: 10%;
+        }
+        .sales-container p{
+            font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 1.25rem;
+            line-height: 1.8rem; 
+        }
+        .sales-container li{
+            font-size: 1.20rem;
+        }
+</style>
+</head>
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <div class="container main-nav flex">
+                <a href="#" class="company-logo"><img src="images/logo.png"></a>
+                <div class="nav-links">
+                    <ul class="flex">
+                        <li><a href="overview.html" class="hover-link">OVERVIEW</a></li>
+                        <li><a href="sales.html" class="hover-link">GROWTH_SALES</a></li>
+                        <li><a href="Publisher.html" class="hover-link">PUBLISHERS</a></li>
+                        <li><a href="platform.html" class="hover-link">PLATFORM</a></li>
+                        <li><a href="summary.html" class="hover-link">SUMMARY</a></li>
+                        <li><a href="tool.html" class="hover-link">TOOLS</a></li>
+                        <li><a href="#" class="hover-link">CONTRIBUTION</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="text-area">
+          <h1>GLOBAL SALES</h1>
+          <p>Sales between years. In the modern days, video games are known across the world. <br> Let's see how popular of video games to each different world region.</p>
+        </div>
+</section>
+
+
+    <div class="sales-header"></div>
+    <div class="sales-section">
+        <div class="content">
+            <div class="image">
+                <div class="bar" style="--clr1: #800080; --clr2: #c71585;">
+                    <span class="progress" id="55"></span>
+                    <h2>1980-1985</h2>
+                    <h1>197.10</h1>
+                </div>
+            </div>
+            <div class="image">
+                <div class="bar" style="--clr1: #800080; --clr2: #c71585;">
+                    <span class="progress" id="55"></span>
+                    <h2>1986-1990</h2>
+                    <h1>228.87</h1>
+                </div>
+            </div>
+            <div class="image">
+                <div class="bar" style="--clr1: #800080; --clr2: #c71585;">
+                    <span class="progress" id="55"></span>
+                    <h2>1991-1995</h2>
+                    <h1>321.65</h1>
+                </div>
+            </div>
+            <div class="image">
+                <div class="bar" style="--clr1: #800080; --clr2: #c71585;">
+                    <span class="progress" id="55"></span>
+                    <h2>1996-2000</h2>
+                    <h1>1109.4</h1>
+                </div>
+            </div>
+            <div class="image">
+                <div class="bar" style="--clr1: #800080; --clr2: #c71585;">
+                    <span class="progress" id="55"></span>
+                    <h2>2001-2005</h2>
+                    <h1>1964.0</h1>
+                </div>
+            </div>
+            <div class="image">
+                <div class="bar" style="--clr1: #800080; --clr2: #c71585;">
+                    <span class="progress" id="55"></span>
+                    <h2>2006-2010</h2>
+                    <h1>3078.8</h1>
+                </div>
+            </div>
+            <div class="image">
+                <div class="bar" style="--clr1: #800080; --clr2: #c71585;">
+                    <span class="progress" id="55"></span>
+                    <h2>2011-2015</h2>
+                    <h1>71.27</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const bars = document.querySelectorAll('.progress');
+        bars.forEach(item =>{
+            let value = item.id;
+            let contador = 0;
+            let interval = setInterval(function(){
+                item.style.width = contador + "%";
+                if (contador == value){
+                    clearInterval(interval);
+                }
+                contador++;
+
+            },8);
+        })
+    </script>
+
+    <!-- <section> -->
+        <div class="sales-container">
+            <p> According to the chart, you'll obviously notice that there're so many curves, up and down. This somehow related to the releases chart, but still, let's take a deeper look on some events.</p> <br>
+            <div class="sales-list">
+                <ul>
+                    <li>
+                        In 1984 there's the game named <b>Duck Hunt</b> which has 28.31 million sales<i>(count as 56.22% of that year  sales)</i>
+                    </li>
+                    <li>
+                        In 1985 there's the game named <b>Super Mario Bros</b>. which has 40.24 million sales<i>(count as 74.6% of that year sales)</i>
+                    </li>
+                    <li>
+                        In 1989 there's the game named <b>Tetris</b> which has 30.26 million sales and the game named <b>Super Mario</b> Land which has 18.14 million sales<i>(both games count as 65.89% of that year sales)</i>
+                    </li>
+                    <li>
+                        In 1995, the first event of <b>Electronic Entertainment Expo</b> was held in Los Angeles Convention Center. In this event, there will be many game publishers gathering up and set up their own exhibition in the event, which could make people more interested in new video games and boost their sales up.
+                    </li>
+                    <li>
+                        On October 2000, Sony released <b>PlayStation 2</b>. This boosts video game sales up in 2001-2002.
+                    </li>
+                    <li>
+                        On November 2004, <b>Nintendo DS</b> was released. On November 2005, <b>Wii</b> and <b>XBox360</b> were released. On November 2006, <b>PlayStation 3</b> was released. The releases of these 4 brand new and popular gaming platforms significantly boost the video game sales up from 2004 to 2008.
+                    </li>
+                </ul>
+            </div>
+    </div>
+
+
+</body>
+</html>
