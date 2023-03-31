@@ -10,9 +10,8 @@
 }
 body{
     font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    overflow-x: hidden;
     color: black;
-    background-color: rgba(212, 213, 219, 0.7);
+    background-color: rgba(238, 240, 248, 0.7);
 }
 h1{
     font-size: 3rem;
@@ -31,12 +30,6 @@ a{
 }
 /* .container{
     max-width: 1180px;
-    margin-inline: auto;
-    padding-inline: var(--padding-inline-section);
-}
-.flex{
-    display: flex;
-    align-items: center;
 } */
 .flex{
     display: flex;
@@ -126,28 +119,25 @@ a{
 }
 /*------------------header section---------------------*/
 
-header{
-    /* padding: 10px #000 0; */
+.about-section{
     padding-top: 5%;
-}
-
-.header-section{
     justify-content: center;
     gap: 40px;
     padding-bottom: 10%;
 }
-.header-left{
+.about-left{
     max-width: 40vw;
 }
 
-.header-left h1{
+.about-left h1{
     margin-top: 20px;
+    padding-bottom: 3%;
 }
 
-.get-started-btn{
+/* .get-started-btn{
     margin-top: 20px;
-}
-.header-right img{
+} */
+.about-right img{
     width: 700px;
     height: 500px;
 }
@@ -241,6 +231,30 @@ header{
 .focus-col h2{
     padding-bottom: 5px;
     font-family: 'Gloock', serif;
+}
+
+
+
+/* -------------------fAq---------------------- */
+.faq h1{
+    text-align: center;
+    padding-top: 5%;
+    /* padding-bottom: 5%; */
+}
+.faq  p{
+    color: grey;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    padding-bottom: 5%;
+}
+.faq-list ul{
+    padding-left: 2%;
+    text-decoration: none;
+}
+.faq-list li{
+    padding-left: 10%;
+    padding-bottom: 1%;
+    list-style: none;
 }
 
 
