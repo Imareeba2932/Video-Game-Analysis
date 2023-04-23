@@ -204,7 +204,7 @@ a{
 
 /* ------------focusing part------------------ */
 
-.sub-col{
+.sub-col {
     width: 80%;
     margin: auto;
     text-align: center;
@@ -214,6 +214,13 @@ a{
     color: grey;
     font-family: 'Kalam', cursive;
 }
+.sub-col h3{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
 .row{
     margin-top: 5%; 
     display: flex;
@@ -239,14 +246,14 @@ a{
 .faq h1{
     text-align: center;
     padding-top: 5%;
-    /* padding-bottom: 5%; */
+    padding-bottom: 3%;
 }
-.faq  p{
+/* .faq  p{
     color: grey;
     text-align: center;
     font-family: 'Kalam', cursive;
     padding-bottom: 5%;
-}
+} */
 .faq-list ul{
     padding-left: 2%;
     text-decoration: none;
