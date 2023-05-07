@@ -25,5 +25,12 @@
 **Q9:** What is the average lifespan of a video game console, and how does this affect the sales of games released on that platform?<br/>
 **Q10:** Are there any significant differences in sales performance between games with different ESRB ratings?<br/>
 **Q11:** Which game genres are the most popular among gamers?<br/>
+
 ### Hypothesis
+**H1:** Games with higher user ratings have higher global sales. <br/>
+**H2:** Games with a higher ESRB rating (e.g. T or M) have higher global sales than games with a lower rating (e.g. E or E10+). <br/>
+**H3:** The release year of a game has a significant impact on its global sales. <br/>
+**H4:** Games developed by certain publishers or on specific platforms have higher global sales than others. <br/>
+**H5:** The genre of a game is a significant factor in determining its global sales. <br/>
+
 Open web link : [Click Here](https://uqbaahmad.github.io/Video-Game-Analysis/)
