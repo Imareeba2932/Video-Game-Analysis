@@ -11,7 +11,7 @@
 body{
     font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: black;
-    background-color: rgba(238, 240, 248, 0.7);
+    background-color: #fff;
 }
 h1{
     font-size: 3rem;
@@ -57,7 +57,7 @@ a{
     min-height: 100vh;
     width: 100%;
     /* background-image: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2)) ,url(images/background.png); */
-    background-image: url(images/font.jpg);
+    background-image: url(/static/images/font.jpg);
     background-position: center;
     background-size: cover;
     padding-top: 2px;
