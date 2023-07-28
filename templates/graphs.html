@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphs</title>
+</head>
+<body>
+    <main style="background-color: rgb(226, 211, 206);">
+        <div  class="container">
+            <div class="row my-3">
+                {% for fig in figures %}
+                <div class="col-md-10 mx-auto mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            {{ fig|safe  }}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="col-md-10 mx-auto">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1>Sum Of Sales By Year</h1>
+                            <div id="graph1">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            {{ fig3 | safe }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 mx-auto">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1>Average Of Sales By Year</h1>
+                            <div id="graph1">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            {{ fig4 | safe }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 mx-auto">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1>Count Of Video Games By Year</h1>
+                            <div id="graph1">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            {{ fig5 | safe }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 mx-auto">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1>Count Top 100 Video Games By Year</h1>
+                            <div id="graph1">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            {{ fig6 | safe }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 mx-auto">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1>Count Of Video Games By Platform</h1>
+                            <div id="graph1">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            {{ fig7 | safe }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 mx-auto">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1>Count Of Top 100 Video Games By Platform </h1>
+                            <div id="graph1">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            {{ fig8 | safe }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 mx-auto">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1>Count Of Video Games By Genre</h1>
+                            <div id="graph1">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            {{ fig9 | safe }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 mx-auto">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1>Count Of Top 100 Video Games By Genre</h1>
+                            <div id="graph1">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            {{ fig10 | safe }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 mx-auto">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1>Count Of Video Games By Publisher</h1>
+                            <div id="graph1">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            {{ fig11 | safe }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 mx-auto">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1>Count Of Top 100 Video Games By Publisher</h1>
+                            <div id="graph1">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            {{ fig12 | safe }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 mx-auto">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1>Density Of Genre Of Each Publisher</h1>
+                        </div>
+                        <div class="card-body">
+                            {{ fig13 | safe }}
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
